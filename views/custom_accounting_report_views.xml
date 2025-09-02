@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--    Client actions for the button click-->
+    <record id="custom_action_trial_balance" model="ir.actions.client">
+        <field name="name">Custom Trial Balance</field>
+        <field name="tag">custom_trl_b</field>
+    </record>
+    <menuitem id="menu_custom_trial_balance" action="custom_action_trial_balance"
+              name="Custom Trial Balance" sequence="11"
+              parent="dynamic_accounts_report.dynamic_report_accounting"/>
+
+    <!--    Client actions for the button click-->
+    <record id="custom_action_profit_and_loss" model="ir.actions.client">
+        <field name="name">Custom Profit And Loss</field>
+        <field name="tag">custom_dfr_n</field>
+    </record>
+    <menuitem id="menu_custom_profit_and_loss" action="custom_action_profit_and_loss"
+              name="Custom Profit And Loss" sequence="11"
+              parent="dynamic_accounts_report.dynamic_report_accounting"/>
+</odoo>
